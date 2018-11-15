@@ -9,7 +9,7 @@ interface ComponentProps {
     children: React.ReactElement<TextFieldProps>;
 }
 
-type Props = ComponentProps & FormContext<any>;
+export type Props = ComponentProps & FormContext<any>;
 
 class TextFieldWrapperComponent extends React.PureComponent<Props> {
 

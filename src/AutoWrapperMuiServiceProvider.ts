@@ -1,21 +1,15 @@
 import { ServiceProvider } from "protoculture";
 import { WrappingConfiguration } from "auto-wrapper";
-import { TextField } from "@material-ui/core";
-import { TextFieldWrapper } from "./Component/TextFieldWrapper";
+import { defaultConfiguration } from "./DefaultConfiguration";
 
 
 export class AutoWrapperMuiServiceProvider extends ServiceProvider {
 
     public async boot() {
 
-        this.bundle.container
+        defaultConfiguration.forEach((configuration) => this.bundle.container
             .bind<WrappingConfiguration>(autoWrapperMuiSymbols.MuiAutoWrapper)
-            .toConstantValue({
-                type: TextField,
-                with: [
-                    TextFieldWrapper,
-                ],
-            });
+            .toConstantValue(configuration));
     }
 }
 
