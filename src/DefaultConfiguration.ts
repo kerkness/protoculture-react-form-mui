@@ -1,5 +1,6 @@
-import { TextField } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 import { TextFieldWrapper } from "./Component/TextFieldWrapper";
+import { ButtonWrapper } from "./Component/ButtonWrapper";
 
 
 export const defaultConfiguration = [
@@ -8,5 +9,11 @@ export const defaultConfiguration = [
         with: [
             TextFieldWrapper,
         ],
+    },
+    {
+        type: Button,
+        with: [
+            ButtonWrapper,
+        ]
     }
 ];

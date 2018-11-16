@@ -1,9 +1,9 @@
 {
-  "name": "react-protoculture-form-mui",
+  "name": "protoculture-react-form-mui",
   "version": "0.0.0-development",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "repository": "https://github.com/atrauzzi/react-protoculture-form-mui",
+  "repository": "https://github.com/atrauzzi/protoculture-react-form-mui",
   "author": "Alexander Trauzzi <atrauzzi@gmai.com>",
   "license": "Apache-2.0",
   "private": false,
@@ -18,10 +18,12 @@
     "@types/lodash": "^4.14.118",
     "@types/react": "^16.7.6",
     "auto-wrapper": "^1.0.0",
+    "chownr": "^1.0.1",
     "lodash": "^4.17.11",
     "protoculture": "^2.0.92",
     "protoculture-react-form": "^1.0.0",
-    "react": "^16.6.3"
+    "react": "^16.6.3",
+    "y18n": "^3.2.1"
   },
   "devDependencies": {
     "semantic-release": "^15.12.0",

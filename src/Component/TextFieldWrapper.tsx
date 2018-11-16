@@ -34,6 +34,7 @@ class TextFieldWrapperComponent extends React.PureComponent<Props> {
 
     private async blurred(event: React.SyntheticEvent<HTMLInputElement>) {
 
+        this.props.form.setFieldValue(this.props.index, this.props.children.props.name, event.currentTarget.value);
         // parentForm.trySetFieldValue(fieldMetadata.path, e.currentTarget.value);
     }
 
@@ -51,7 +52,7 @@ class TextFieldWrapperComponent extends React.PureComponent<Props> {
 
     private async changed(event: React.ChangeEvent<any>) {
 
-        this.props.form.setFieldValue(this.props.index, this.props.children.props.name, event.currentTarget.value);
+        // this.props.form.setFieldValue(this.props.index, this.props.children.props.name, event.currentTarget.value);
         // if (debounce) {
 
         //     clearTimeout(debounce);
