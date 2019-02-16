@@ -2,4 +2,6 @@ export { autoWrapperMuiSymbols, AutoWrapperMuiServiceProvider } from "./AutoWrap
 
 export { TextFieldWrapper } from "./Component/TextFieldWrapper";
 
+export { ButtonWrapper } from "./Component/ButtonWrapper";
+
 export { defaultConfiguration } from "./DefaultConfiguration";
